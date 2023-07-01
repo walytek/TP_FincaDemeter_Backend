@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<style>
+    body{
+
+background-image: url(https://cdn.pixabay.com/photo/2017/06/26/12/49/red-wine-2443699_1280.jpg);
+
+    }
+    .window-notice {
+        
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        width: 500px;
+        height: 300px;
+        margin-left: 400px;
+        margin-right: 500px;
+    } 
+    .window-notice .content {
+        text-align: center;
+        opacity: 0.70;
+        background: #c9e7e2;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 600px;
+        min-width: 320px !important;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+
+div{
+    
+    font-family:fantasy;
+    color: rgb(4, 1, 12);
+    font-weight: 50px;
+    font-size: 30px;
+}
+a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(16, 1, 1);
+    font-size: 20px;
+}
+#close{
+
+    margin-top: 20px;
+}
+</style>
+<body>
+      
+    <div class="window-notice" id="window-notice">
+        <div class="content">
+            <div class="content-text">¡Datos cargados correctamente! 
+                
+            </div>
+            <br>
+            <div>
+                <br>
+            <button><a href="/productos"><strong >Comprobar</strong></a></button></div>
+            
+            <br>
+            <br>
+            <div id="close"  class="content-buttons"><button><a href="/create" id="close-button"><strong>Realizar Nueva Carga</strong></a></button></div>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
